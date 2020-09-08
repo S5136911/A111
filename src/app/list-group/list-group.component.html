@@ -1,0 +1,22 @@
+<div class="conatiner">
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+        <tr style="padding-top:20px;" *ngFor="let group of groups">
+            <td>{{ group.id }}</td>
+            <td>{{ group.name }}</td>
+            <td>
+                <span class="btn btn-primary" [routerLink]="['/update', group._id]">
+          <i class="fa fa-spinner"></i> Edit</span>
+        &nbsp;
+        <span class="btn btn-primary" (click)="deletegroup(group._id)"
+          ><i class="fa fa-trash"></i> Delete</span
+        >
+        
+      </td>
+    </tr>
+    <a href="add-group.component.html">j</a>
+  </table>
+</div>
