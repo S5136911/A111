@@ -1,27 +1,3 @@
-# A1
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# Chatroom
+## Git repository
+I used Github to help me with the Chatroom project，Git provides great version control for developing the projectfirst I used the README to list some key information. I often use Github for backup because angular files are too big. In development it is often necessary to set up the back end and the front end separately to ensure that each part is correct and does not affect the whole. This allows my code to be completely free of some errors, and the idea of distribution ensures that development takes too long to be efficient and parallel，The primary consolidation problem has solved many problems with using a lot I include finishing can accurately when the range of each part, no copy more no copying and less interface call like this work to do and the definition of fault tolerance rate is very low if development for a long time need manual merge many times lead to the low work efficiency, making with accurate and very quickly. 
