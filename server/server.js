@@ -19,14 +19,18 @@ MongoClient.connect(url, { poolSize: 10, useNewUrlParser: true, useUnifiedTopolo
     const db = client.db(dbName);
     sockets.connect(app, io, db);
 
-    require('./routes/users/api-check.js')(db, app, ObjectID);
     require('./routes/users/api-add.js')(db, app);
+    require('./routes/users/api-check.js')(db, app, ObjectID);
+    require('./routes/users/api-deleteitem.js')(db, app, ObjectID);
+    require('./routes/users/api-getitem.js')(db, app, ObjectID);
     require('./routes/users/api-getlist.js')(db, app);
+    require('./routes/users/api-update.js')(db, app, ObjectID);
 
-    require('./routes/api/login')(app);
+
+    // require('./routes/api/login')(app);
     require('./routes/groups/api-add.js')(db, app);
     //require('./routes/api-prodcount.js')(db,app);
-    require('./routes/groups/api-validid.js')(db, app);
+    // require('./routes/groups/api-validid.js')(db, app);
     require('./routes/groups/api-getlist.js')(db, app);
     require('./routes/groups/api-getitem.js')(db, app, ObjectID);
     require('./routes/groups/api-update.js')(db, app, ObjectID);

@@ -20,21 +20,23 @@ export class UserService {
   }
 
   getitem(userID) {
-    return this.http.post<any>("http://localhost:3000/api/user/getitem", {
+    return this.http.post<any>("http://localhost:3000/api/users/getitem", {
       userID: userID
     });
   }
 
   updateitem(user: User) {
-    return this.http.post<any>("http://localhost:3000/api/user/update", user);
+    console.log(JSON.stringify(user));
+    return this.http.post<any>("http://localhost:3000/api/users/update", user);
   }
+
   deleteitem(userID) {
-    return this.http.post<any>("http://localhost:3000/api/user/deleteitem", {
+    return this.http.post<any>("http://localhost:3000/api/users/deleteitem", {
       userID: userID
     });
   }
   checkvalidid(userID) {
-    return this.http.post<any>("http://localhost:3000/api/user/checkvalidid", {
+    return this.http.post<any>("http://localhost:3000/api/users/checkvalidid", {
       id: userID
     });
   }

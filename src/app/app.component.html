@@ -11,23 +11,20 @@
         >
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/add-group">Add Group</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/add-user">Add User</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/list-user">UserList</a>
+        <a class="nav-link" routerLink="/login">Login</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" routerLink="/list-group">Group List</a>
             </li>
+
             <li class="nav-item">
-                <a class="nav-link" routerLink="/login">Login</a>
+                <a class="nav-link" routerLink="/list-user">User List</a>
             </li>
+
             <li class="nav-item">
-                <a class="nav-link" routerLink="/logout">logout</a>
+                <a class="nav-link" (click)="itemClicked()">Logout</a>
             </li>
+
         </ul>
     </div>
 </nav>

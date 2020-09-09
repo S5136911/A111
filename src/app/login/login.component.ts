@@ -9,8 +9,8 @@ import { UserService } from "../services/user.service";
   styleUrls: ["./login.component.css"]
 })
 export class LoginComponent implements OnInit {
-  email: string = "Email Address";
-  password: string = "password";
+  email: string = "";
+  password: string = "";
   error: boolean = false;
   hidemessage: boolean = true;
   uri: string = "http://localhost:3000";

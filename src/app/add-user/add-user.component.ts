@@ -82,7 +82,7 @@ export class AddUserComponent implements OnInit {
       this.iderrorshow = !this.iderrorshow;
     } else {
       // console.log("sdfasdkfjkasjgdf");
-      this.newuser = new User(this.userid, this.username, this.email);
+      this.newuser = new User("", this.userid, this.username, this.email, "");
 
       this.userService.add(this.newuser).subscribe(data => {
         console.log(data);
