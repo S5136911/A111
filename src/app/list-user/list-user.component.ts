@@ -15,5 +15,17 @@ export class ListUserComponent implements OnInit {
       console.log(data);
       this.users = data;
     });
+
+  }
+  deleteproduct(id) {
+    if (confirm("Are you sure you want to delete this item")) {
+      this.userservice.deleteitem(id).subscribe(data => {
+        if (data.ok == 1) {
+          //request socket server to send an update
+          // this.socketservice.updatelist();
+          // this.socketservice.prodcount();
+        }
+      });
+    }
   }
 }

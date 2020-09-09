@@ -7,7 +7,7 @@ import { FormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 
 import { LoginComponent } from "./login/login.component";
-import { AddGroupComponent } from "./add-group/add-group.component";
+
 import { AddUserComponent } from "./add-user/add-user.component";
 import { AddChannelComponent } from "./add-channel/add-channel.component";
 import { ListGroupComponent } from "./list-group/list-group.component";
@@ -20,7 +20,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
   declarations: [
     AppComponent,
     LoginComponent,
-    AddGroupComponent,
+
     AddUserComponent,
     AddChannelComponent,
     ListGroupComponent,

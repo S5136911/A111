@@ -1,6 +1,6 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
-import { AddGroupComponent } from "./add-group/add-group.component";
+
 import { AddUserComponent } from "./add-user/add-user.component";
 import { AddChannelComponent } from "./add-channel/add-channel.component";
 import { ListGroupComponent } from "./list-group/list-group.component";
@@ -11,7 +11,7 @@ import { LogoutComponent } from "./logout/logout.component";
 
 const routes: Routes = [
   // {path:'',component:HomeComponent},
-  { path: "add-group", component: AddGroupComponent },
+  
   { path: "add-user", component: AddUserComponent },
   { path: "add-channel", component: AddChannelComponent },
 
