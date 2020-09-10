@@ -147,10 +147,13 @@ RETURN:
 {
     "isSuccess": true
 }
+## Describes the details of the interaction between the client and server
+
+Use MongoDB to store and provide information for back-end nodes, and read and write JSON files by Webserver through Node's FS module
+With the computer. The node server then provides the REST API to the front end in response in JSON format. Angular has data services that complete the CRUD of the data model and render the information as HTML in every component of an Angular project
 
 
-
-
+![avatar](https://sites.google.com/site/bestmeanstacktraining/home/meanj.jpg?attredirects=0)
 
  
 
