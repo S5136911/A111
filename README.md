@@ -115,19 +115,19 @@ METHOD: DELETE
 Input Parameter: /api/groups/4
 RETURN: {"success": true}
 
-User:
+### User:
 
 URL: /api/users
 METHOD: GET
-RETURN: [{"username":"super","email":"super@com.au","groupList":[],"adminGroupList":["1","2"],"ofGroupAdminsRole":true},{"username":"teena","email":"teena@com.au","groupList":["2","1"],"adminGroupList":[],"ofGroupAdminsRole":false]
+RETURN: [{"username":"","email":"@com.au","groupList":[],"adminGroupList":["1","2"],"ofGroupAdminsRole":true},{"username":"teena","email":"teena@com.au","groupList":["2","1"],"adminGroupList":[],"ofGroupAdminsRole":false]
 
 URL: /api/users/:username
 
 METHOD: GET
 Input Parameter: /api/users/teena
 RETURN: {
-    "username": "teena",
-    "email": "teena@com.au",
+    "username": "",
+    "email": "@com.au",
     "groupList": [
         "2",
         "1"
