@@ -18,6 +18,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { UpdateUserComponent } from './update-user/update-user.component';
 import { UpdateGroupComponent } from './update-group/update-group.component';
 import { UpdateChannelComponent } from './update-channel/update-channel.component';
+import { ChatComponent } from './chat/chat.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { UpdateChannelComponent } from './update-channel/update-channel.componen
     LogoutComponent,
     UpdateUserComponent,
     UpdateGroupComponent,
-    UpdateChannelComponent
+    UpdateChannelComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,
