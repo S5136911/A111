@@ -31,6 +31,7 @@ export class User {
     this.role = _role;
   }
 }
+
 export class Channel {
   objid: string;
   id: number;
@@ -40,5 +41,18 @@ export class Channel {
     this.objid = objid;
     this.id = _id;
     this.name = _name;
+  }
+}
+
+export class Message {
+  _id: string;
+  messagetext: string;
+  messagetime: string;
+  user: User;
+
+  constructor(_messagetext: string, _date: string, _user: User) {
+    this.messagetext = _messagetext;
+    this.messagetime = _date;
+    this.user = _user;
   }
 }

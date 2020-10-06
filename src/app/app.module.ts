@@ -19,6 +19,7 @@ import { UpdateUserComponent } from './update-user/update-user.component';
 import { UpdateGroupComponent } from './update-group/update-group.component';
 import { UpdateChannelComponent } from './update-channel/update-channel.component';
 import { ChatComponent } from './chat/chat.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ChatComponent } from './chat/chat.component';
     UpdateUserComponent,
     UpdateGroupComponent,
     UpdateChannelComponent,
-    ChatComponent
+    ChatComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

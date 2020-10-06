@@ -1,1 +1,46 @@
-<p>list-channel works!</p>
+<h2>Channel List</h2>
+<div class="conatiner">
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+        <tr style="padding-top:20px;" *ngFor="let group of groups">
+            <td>{{ group.id }}</td>
+            <td><a routerLink="/chat">{{ group.name }}</a></td>
+            <td>
+                <span class="btn btn-primary" [routerLink]="['/update-channel', group._id]">
+          <i class="fa fa-spinner"></i> Edit</span
+        >
+        &nbsp;
+        <span class="btn btn-primary" (click)="deletegroup(group._id)"
+          ><i class="fa fa-trash"></i> Delete</span
+        >
+      </td>
+    </tr>
+  </table>
+
+  <form (submit)="addnewUser($event)">
+      <div class="form-group">
+          <label for="groupid">Channel ID</label>
+          <input type="number" class="form-control" id="groupid" [(ngModel)]="groupid" name="groupid" placeholder="ID" />
+          <div [@iderrorState]="stateName" class="alert alert-warning" id="iderrormsg" role="alert">
+              {{ iderrormsg }} {{ iderrormsg2 }}
+          </div>
+      </div>
+      <div class="form-group">
+          <label for="groupid">Channel Name</label>
+          <input type="text" class="form-control" id="groupname" [(ngModel)]="groupname" name="groupname" />
+      </div>
+
+
+      <div class="form-group">
+          <button type="submit" class="btn btn-primary">
+      <i class="fa fa-plus-square"></i> Add New
+    </button>
+      </div>
+      <div [@noticeState]="noticeName" class="alert alert-warning" role="alert">
+          {{ newUserMessage }}
+      </div>
+  </form>
+</div>

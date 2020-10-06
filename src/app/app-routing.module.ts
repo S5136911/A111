@@ -11,6 +11,8 @@ import { LogoutComponent } from "./logout/logout.component";
 import { UpdateUserComponent } from "./update-user/update-user.component";
 import { UpdateGroupComponent } from "./update-group/update-group.component";
 import { UpdateChannelComponent } from "./update-channel/update-channel.component";
+import { ChatComponent } from "./chat/chat.component";
+import { ProfileComponent } from "./profile/profile.component";
 
 const routes: Routes = [
   // {path:'',component:HomeComponent},
@@ -27,8 +29,10 @@ const routes: Routes = [
   { path: "list-channel", component: ListChannelComponent },
 
   { path: "login", component: LoginComponent },
-  { path: "logout", component: LogoutComponent }
+  { path: "logout", component: LogoutComponent },
 
+  { path: "chat", component: ChatComponent },
+  { path: "profile/:username", component: ProfileComponent }
   //   {path:'list-group/:id',component:ListProductsComponent},
 
   // {path:'account/:user',component:AccountComponent}

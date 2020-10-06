@@ -7,7 +7,7 @@
         </tr>
         <tr style="padding-top:20px;" *ngFor="let group of groups">
             <td>{{ group.id }}</td>
-            <td>{{ group.name }}</td>
+            <td><a routerLink="/list-channel">{{ group.name }}</a></td>
             <td>
                 <span class="btn btn-primary" [routerLink]="['/update-group', group._id]">
           <i class="fa fa-spinner"></i> Edit</span
