@@ -19,16 +19,33 @@ Models are used in both the client and server sides of the project.The exactly m
 ## Angular architecture: components, services, models, routes.
 
 ### Components:
-•	login
-•	logout
-•	list-group
-•	list-user
-•	add-user
-•	add-group
+• login :
+ login page for Verify that the user name and password are correct,	If the correct user can go to the chat page
+• logout :
+If the user clicks on this Page the user will not be able to use any functionality and return to the Login Page
+• list-group ：
+You can add and remove groups and if you click on groups you can go to the channel page
+
+• list-user ：
+Users can be added and removed
+• chat：
+Users chat on this page
+• channel：
+You can add and remove channel and if you click on channels you can go to the chat page
+
+
+• profile:
+Users can upload photo
+
 
 ### Services:
-•	user.service.ts
-•	group.service.ts
+• user.service.ts : 
+Function for user page
+• channel.service.ts:
+Function for channel page 
+• group.service.ts:
+Function for group page
+
 
 
 
