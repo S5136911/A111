@@ -83,19 +83,26 @@ modules, functions, files, global variables.
 ### API functions:
 
 Group:
+• GET /api/groups  : Route to get list of all group from the database.
+• GET /api/groups/:id : Route to get a single group
+• POST /api/groups : check for duplicate id's
+• DELETE /api/groups/id :Route to delete a single group
 
-•	GET /api/groups
-•	GET /api/groups/:id
-•	POST /api/groups
-•	DELETE /api/groups/:id
 
 User:
 
-•	GET /api/users
-•	GET /api/users/:username
-•	PUT /api/users/:username
-•	POST /api/users
-•	DELETE /api/users/:username、
+• GET /api/users : Route to get list of all users from the database.
+• GET /api/users/:username : Route to get a single item
+• DELETE /api/users/:username: Route to delete a single item
+•api/users/checkuser:check for duplicate id's
+•api/users/add: Route to manage adding a user
+
+Channel:
+• GET /api/ Channel  : Route to get list of all Channel from the database.
+• GET /api/ Channel /:id : Route to get a single Channel
+• POST /api/ Channel : check for duplicate id's
+• DELETE /api/ Channel /id :Route to delete a single Channel
+
 、
 
 Files
